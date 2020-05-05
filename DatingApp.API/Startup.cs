@@ -70,7 +70,7 @@ namespace DatingApp.API
             //Change done
 
             //Change done
-            app.UseCors(r => r.AllowAnyOrigin().AllowAnyMethod().AllowAnyMethod());
+            app.UseCors(r => r.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseAuthentication();
             app.UseAuthorization();
             //Change done
